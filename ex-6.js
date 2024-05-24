@@ -1,4 +1,8 @@
 let height = undefined;
-let result;
 
-console.log(result); //  Result ควรจะได้ออกมาเป็น “Height is not defined”
+function result(height) {
+  let nullish = height ?? "Height is not defined";
+  return nullish;
+}
+
+console.log(result(height)); //  Result ควรจะได้ออกมาเป็น “Height is not defined”
